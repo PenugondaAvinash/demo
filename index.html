@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>system task</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mobile.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+		<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/owl.carousel.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse">
+  				<div class="container-fluid">
+  					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<img src="images/class.png" class="img-responsive">
+					</div>
+     				<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+   						<div class="cource-icon"> <i class="fa fa-bars"></i>ALL COURSES</div>
+     						<form class="navbar-form navbar-left" action="/action_page.php">
+      								<div class="input-group">
+        								<input type="text" class="form-control" placeholder="Search" name="search">
+        								<div class="input-group-btn">
+          										<button class="btn btn-default" type="submit">
+            										<i class="glyphicon glyphicon-search"></i>
+          										</button>
+        								</div>
+     								 </div>
+    						</form>
+    						<ul class="nav navbar-nav resources">
+      								<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">RESOURCES <span class="caret"></span></a>
+        								<ul class="dropdown-menu resource-category">
+          									<li><a href="#">BLOG</a></li>
+          									<li><a href="#">OPENCAMPUS</a></li>
+          									<li><a href="#">CODELABS</a></li>
+        								</ul>
+      								</li>
+      								<li><a href="#">FOR ENTERPRISE</a></li>
+      								<li><button type="button" data-toggle="modal" data-target="#login-modal" class="login-btn common-btn">LOG IN / SIGN UP</button></li>
+    						</ul>
+						</div>
+				</div>
+		</nav>
+		
+		<div class="session">
+			<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+				<div class="modal-dialog">
+					<div class="loginmodal-container">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+						<div class="login-register-wrapper container">
+							<div id="myCarousel modal" class="carousel slide" data-ride="">
+								<div class="carousel-inner">
+									<div class="item active">
+										<div class="login-wrapper">
+											<button type="button" class="btn btn-danger"><i class="fa fa-google-plus  "></i>Login with google</button><button type="button" class="btn btn-primary google"><i class="fa fa-facebook "></i>Login with facebook</button>
+											<h2 class="text-center email1">OR VIA EMAIL</h2>
+											<form action="#" method="post" class="">
+												<div class="form-group">
+													<input  type="email" placeholder="Email" class="form-control address" id="emailinput" aria-describedby="firstnameinput">
+												</div>
+												<div class="form-group">
+													<input  type="password" placeholder="Password" class="form-control address" id="pwdinput" aria-describedby="firstnameinput">
+												</div>
+												<div class="form-group">
+													
+													<button type="button" class="btn btn-primary signup" data-toggle="modal" data-target="#myModal" class="modal">login</button>
+												</div>
+												
+												<div class="login-register text-center">
+													<a href="#" class="forgotpwd">Forgot Password?</a>  
+													<a class=" carousel-control signin-link" href="#myCarousel\ modal" data-slide="prev">Sign Up</a>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="item">
+										<div class="signup-wrapper">
+											<h2 class="text-center">REGISTER</h2>
+											<form action="login.html" method="post" class="signin">
+												<div class="form-group">
+													<input  type="email" placeholder="Your Work Email" class="form-control address">
+												</div>
+												<div class="form-group">
+													<input  type="password" placeholder="Password" class="form-control address">
+												</div>
+												<div class="form-group">
+													<input class="form-control address" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+												</div>
+												<div class="form-group">
+													<select class="form-control" id="sel1">
+														<option>Male</option>
+														<option>Female</option>
+													</select>
+												</div>
+												<div class="form-group">
+													<button type="button" class="btn btn-primary signup">Sign Up</button>
+												</div>
+												<div class="login-register text-center">
+													<a href="#" class="forgotpwd">Forgot Password?</a>  
+													<a class=" carousel-control signin-link" href="#myCarousel\ modal" data-slide="prev"> Already Registered? Sign In</a>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</header>
+		<div class="content-headers container">
+			<span class="orga"><h3>ORGANIZATIONS:</h3><p>Enhance PRODUCTIVITY through learning</p></span><br>
+			<span class="individuals"><h3>INDIVIDUALS:</h3><p>Become AWESOME at what you want to do</p></span>
+		</div>
+		<div class="main-headers container">
+			<div class="col-md-6">
+				<h2>Technical & Management</h2>
+				<div class="individual-data">
+					<h3>INDIVIDUALS</h3>
+					<p>Affordable,job aligned training to help you grow in your career,Affordable,job aligned training to help you grow in your career</p>
+					<button type="button" class="browse-courses common-btn">BROWSE COURSES</button>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h2>Technical & Management</h2>
+				<div class="individual-data">
+					<h3>ORGANIZATIONS</h3>
+					<p>Upskill and Reskill employers to drive more value at work and increase work place efficiency</p>
+					<button type="button" class="browse-courses common-btn">EXPLORE SOLUTIONS</button>
+				</div>
+			</div>
+		</div>
+		<div class="container learning-paths">
+			<h2>LEARNING PATHS</h2>
+			<div class="col-md-6">
+				<h3>IMMERSIVE INSTRUCTOR-LED </h3>
+				<p>Learn from experienced instructors live,and grt real time hands-on knowledge on your learning track</p>
+			</div>
+			<div class="col-md-6">
+				<h3>ON-DEMAND SELF-PLACED </h3>
+				<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+			</div>
+			<span><button type="button" class="perfect-courses text-center common-btn">FIND THE PERFECT COURSE FOR YOU</button></span>
+		</div>
+		<div class="container learning-paths emp-sponsered">
+			<h2>EMPLOYER-SPONSORED LEARNING</h2>
+			<div class="col-md-6">
+				<p>46% of our learners receive finding from there employers to take up our training programs to improve there skills</p>
+				<p>46% of our learners receive finding from there employers to take up our training programs to improve there skills</p>
+				<p>46% of our learners receive finding from there employers to take up our training programs to improve there skills</p>
+			</div>
+			<div class="col-md-6">
+				<img src="images/emp.png" class="img-responsive">
+			</div>
+			<span><button type="button" class="employee-sponsered common-btn">LEARN HOW TO GET FUNDED</button></span>
+		</div>
+		<div class="strt-learning">
+			<h2 class="text-center">Start Learning</h2>
+			<h3>TECHNOLOGY COURSES</h3>
+				<div class="owl-carousel owl-theme offers">
+					<div class="item box-wrapper">
+						<h4>Software Engineering Immersive</h4>
+						<img src="images/img1.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Software UI/UX Immersive</h4>
+						<img src="images/img2.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Software Data Science Immersive</h4>
+						<img src="images/img3.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Front End Webdevelopment</h4>
+						<img src="images/img4.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Product Management</h4>
+						<img src="images/img5.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>	
+				</div>
+				<div class="second-theme">
+				<div class="owl-carousel owl-theme offers">
+					<div class="item box-wrapper">
+						<h4>Software Engineering Immersive</h4>
+						<img src="images/img1.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Software UI/UX Immersive</h4>
+						<img src="images/img2.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Software Data Science Immersive</h4>
+						<img src="images/img3.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Front End Webdevelopment</h4>
+						<img src="images/img4.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Product Management</h4>
+						<img src="images/img5.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>	
+				</div>
+			</div>
+			<div class="text-center">
+					<a href="#manage"><button type="button" class="employee-sponsered common-btn">BROWSE COURSES</button> </a>
+			</div>
+		</div>
+		<div class="strt-learning">
+			<h2 class="text-center">Start Learning</h2>
+			<h3 id="manage">MANAGEMENT COURSES</h3>
+				<div class="owl-carousel owl-theme offers">
+					<div class="item box-wrapper">
+						<h4>Software Engineering Immersive</h4>
+						<img src="images/img1.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Software UI/UX Immersive</h4>
+						<img src="images/img2.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Software Data Science Immersive</h4>
+						<img src="images/img3.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Front End Webdevelopment</h4>
+						<img src="images/img4.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Product Management</h4>
+						<img src="images/img5.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>	
+				</div>
+				<div class="second-theme">
+					<div class="owl-carousel owl-theme offers">
+							<div class="item box-wrapper">
+								<h4>Software Engineering Immersive</h4>
+								<img src="images/img1.png" class="img-responsive paytaxi-offerimg">
+								<h5>On campus/Fulltime</h5>
+								<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+							</div>
+							<div class="item box-wrapper">
+								<h4>Software UI/UX Immersive</h4>
+								<img src="images/img2.png" class="img-responsive paytaxi-offerimg">
+								<h5>On campus/Fulltime</h5>
+								<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+							</div>
+							<div class="item box-wrapper">
+								<h4>Software Data Science Immersive</h4>
+								<img src="images/img3.png" class="img-responsive paytaxi-offerimg">
+								<h5>On campus/Fulltime</h5>
+								<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+							</div>
+							<div class="item box-wrapper">
+								<h4>Front End Webdevelopment</h4>
+								<img src="images/img4.png" class="img-responsive paytaxi-offerimg">
+								<h5>On campus/Fulltime</h5>
+								<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+							</div>
+							<div class="item box-wrapper">
+								<h4>Product Management</h4>
+								<img src="images/img5.png" class="img-responsive paytaxi-offerimg">
+								<h5>On campus/Fulltime</h5>
+								<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+							</div>
+							<div class="item box-wrapper">
+								<h4>Data Analyst</h4>
+								<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+								<h5>On campus/Fulltime</h5>
+								<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+							</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<div class="item box-wrapper">
+						<h4>Data Analyst</h4>
+						<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+						<h5>On campus/Fulltime</h5>
+						<p>Learn at your convience,rivest sections multiple times,and practice for perfection.</p>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>	
+				</div>
+			</div>
+			<div class="text-center">
+			<a href="#manage"><button type="button" class="employee-sponsered common-btn">BROWSE COURSES</button></a>
+		</div>
+		</div>
+		<div class="container learning-paths emp-sponsered">
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-4 open-campus">
+				<h3>OPEN CAMPUS</h3>
+				<div class="col-md-3">
+					<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+				</div>
+				<div class="col-md-9">
+					<p>A free learning resourse accross tech and management domains</p>
+				</div>
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-4 open-campus">
+				<h3>OPEN CAMPUS</h3>
+				<div class="col-md-3">
+					<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+				</div>
+				<div class="col-md-9">
+					<p>A free learning resourse accross tech and management domains</p>
+				</div>
+			</div>
+			<div class="col-md-1">
+				</div>
+			<div class="col-md-12 text-center open-box">
+				<div class="col-md-4">
+				</div>
+				<div class="text-center open-campus col-md-4">
+				<h3>OPEN CAMPUS</h3>
+				<div class="col-md-3">
+					<img src="images/img6.png" class="img-responsive paytaxi-offerimg">
+				</div>
+				<div class="col-md-9">
+					<p>A free learning resourse accross tech and management domains</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 soft-prgmer">
+			<div class="col-md-6">
+				<img src="images/women1.jpg" class="img-responsive">
+			</div>
+			<div class="col-md-6">
+				<p>"I now have a fullfilling role in job design that I actually enjoy working in.The skills i have learned in Angular course have really helped,even beyond lamding thid job".</p>
+				<p>"I now have a fullfilling role in job design that I actually enjoy working in.The skills i have learned in Angular course have really helped,even beyond lamding thid job".</p>
+				<p>"I now have a fullfilling role in job design that I actually enjoy working in.The skills i have learned in Angular course have really helped,even beyond lamding thid job".</p>
+				<p>"I now have a fullfilling role in job design that I actually enjoy working in.The skills i have learned in Angular course have really helped,even beyond lamding thid job".</p>
+			</div>
+		</div>
+		
+			<h2 class="result-continue"><span><a href="javascript:void(0)" class="close-popup popup-continue" style="color: #0073b1;float: none;">Our Learners Come From</a></span></h2>
+			<section class="feedback1">
+			<div class="container">
+				<div class="carousel">
+					<div class="container">
+						<div class="row">
+							<div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="item active carousel-reviews1">
+										<div class="col-md-2 col-sm-6">
+											<a href="#"><p>Google</p></a>
+										</div>
+										<div class="col-md-2 col-sm-6">
+											<a href="#"><p>MicroSoft</p></a>
+										</div>
+										<div class="col-md-2 col-sm-6">
+											<a href="#"><p>Salesforce</p></a>
+										</div>
+										<div class="col-md-2 col-sm-6">
+											<a href="#"><p>SP*Flow</p></a>
+										</div>
+										<div class="col-md-2 col-sm-6">
+											<a href="#"><p>C/A</p></a>
+										</div>
+										<div class="col-md-2 col-sm-6">
+											<a href="#"><p>ANL</p></a>
+										</div>
+									</div>
+									<div class="item carousel-reviews1">
+										<div class="col-md-2 col-sm-6">
+											<a href="#"><p>Google</p></a>
+										</div>
+										<div class="col-md-2 col-sm-6">
+											<a href="#"><p>MicroSoft</p></a>
+										</div>
+										<div class="col-md-2 col-sm-6">
+											<a href="#"><p>Salesforce</p></a>
+										</div>
+										<div class="col-md-2 col-sm-6">
+											<a href="#"><p>SP*Flow</p></a>
+										</div>
+										<div class="col-md-2 col-sm-6">
+											<a href="#"><p>C/A</p></a>
+										</div>
+										<div class="col-md-2 col-sm-6">
+											<a href="#"><p>ANL</p></a>
+										</div>
+									</div>
+                                </div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container acceredited">
+				<div class="col-md-6">
+					<h2>ACCREDITATIONS</h2>
+					<p>We are globally acceredited for the relavant courses by global bodies that include</p>
+				</div>
+				<div class="col-md-6 acceredited-btns">
+					<button type="button" class="employee-sponsered common-btn action-btns">PM 1</button>
+					<button type="button" class="employee-sponsered common-btn action-btns">PRINCE 2</button>
+					<button type="button" class="employee-sponsered common-btn action-btns">ITLI </button>
+					<button type="button" class="employee-sponsered common-btn action-btns">LEARN SIX SIGMA</button>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
+<footer class="page-footer font-small indigo">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">company</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">About Us</a>
+          </li>
+          <li>
+            <a href="#!">Contact Us</a>
+          </li>
+          <li>
+            <a href="#!">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#!">Terms Of Use</a>
+          </li>
+          <li>
+            <a href="#!">Customer Speak</a>
+          </li>
+        </ul>
+
+      </div>
+      
+      <div class="col-md-4 mx-auto">
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">connect</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!"><i class="fa fa-envelope"></i> sales@greycampus.com</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fa fa-envelope"></i>support@greycampus.com</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fa fa-phone"></i>USA +1855 542 2678</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fa fa-phone"></i>USA +1397 994 9941</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fa fa-phone"></i>USA +1397 994 9941</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fa fa-phone"></i>USA +1397 994 9941</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-md-4 mx-auto">
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">enquiries</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Teach for us</a>
+          </li>
+          <li>
+            <a href="#!">Create a course</a>
+          </li>
+          <li>
+            <a href="#!">Become our affiliate</a>
+          </li>
+          <li>
+            <a href="#!">Work with us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</footer>
+		
+	</body>
+</html>
+<script>
+	 $('.owl-carousel.offers').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+			0:{
+            items:1,
+			nav:true,
+			 navText : [
+        "<i class='fa fa-chevron-left'></i>",
+        "<i class='fa fa-chevron-right'></i>" ]
+            },
+       
+        600:{
+            items:3,
+			nav:true,
+			 navText : [
+        "<i class='fa fa-chevron-left'></i>",
+        "<i class='fa fa-chevron-right'></i>" ]
+            },
+       
+        1000:{
+            items:3,
+			nav:true,
+			 navText : [
+        "<i class='fa fa-chevron-left'></i>",
+        "<i class='fa fa-chevron-right'></i>" ]
+            }
+        
+		
+        
+        
+    }
+})
+
+	 //animation for navigating navbar buttons
+    jQuery('a[href^="#"]').click(function(e) {
+
+    jQuery('html,body').animate({ scrollTop: jQuery(this.hash).offset().top}, 1000);
+   return false;
+    e.preventDefault();
+
+});
+	</script>
